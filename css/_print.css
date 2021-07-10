@@ -1,0 +1,5 @@
+body.dynasite { background:none; }
+.ajaxdiv { display:none !important; }
+.overlay { display:none !important; }
+/*body * { display:none !important; }
+body:before { font-family:Verdana,sans-serif; font-size:15px; color:#000; content:'Druckfunktion ist gesperrt. Bitte verwenden Sie die PrintScreen/Screenshot-Funktion.'; }*/

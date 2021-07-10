@@ -1,0 +1,473 @@
+@charset "utf-8";
+
+/*Reservationstool*/
+@media screen and (max-width:1135px) {
+	#responsive { background-color:grey; color:#fff; }
+	#wrapper { width:990px; margin-left:-495px; }
+	#dssiteheader { width:990px !important; }
+	#dsmain, #dssitefooter { width:930px !important; }
+	
+	#blickwinkel { margin-left:500px; }
+}
+
+/*Desktop*/
+@media screen and (max-width:1032px) {
+	html { -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */ }
+	#blickwinkel { display:none; }
+}
+
+/*iPad Querformat*/
+@media screen and (max-width:1024px) {
+	#wrapper { display:none; }
+	#dssubbody { width:990px; margin:0 auto; background-color:#fff; box-shadow:0px 0px 8px #ccc; }
+}
+
+/*von 1009px bis 892px*/
+@media screen and (max-width:1009px) {
+	#responsive { background-color:blue; color:#fff; }
+	/*#wrapper { width:866px; margin-left:-433px; }*/
+	
+	#wrapper { display:none; }
+	#dssubbody { width:866px; margin:0 auto; background-color:#fff; box-shadow:0px 0px 8px #ccc; }
+	#lines { display:none; }
+	
+	#dssiteheader { width:866px !important; }
+	#dsmain, #dssitefooter { width:806px !important; }
+	#links .home, #links .kontakt, #links .standard, #links .bigger { display:none; }
+	
+	#logo { margin-bottom:37px; }
+	
+	/* Header Gallerie */
+	#headergallery { height:280px; }
+	
+	/*Menu*/
+	#menutrigger { 
+		position:relative; margin:15px; padding:0px 15px; text-align:left; font-size:30px; display:block; z-index:2; 
+		-webkit-transition:color .2s; -moz-transition:color .2s; -o-transition:color .2s; transition:color .2s; 
+	}
+	
+	nav { position:relative; z-index:1; margin-bottom:3px; min-height:60px; height:auto; }
+	nav .top { position:absolute; width:100%; left:0px; top:0px; height:4px; background:url('../images/zk_thickline.png') no-repeat center top; }
+	nav .bottom { position:absolute; width:100%; left:0px; bottom:0px; height:4px; background:url('../images/zk_thickline.png') no-repeat center bottom; }
+	
+	#dsmenus { display:none; }
+	#dsmenus { padding:0px 30px 15px 30px; display:none; }
+	#dsmenus > li { float:none; text-align:left; padding:0px; }
+	#dsmenus > li > a { display:block; padding:5px 0px; }
+	#dsmenus > li.fixwidth { position:relative; }
+	#dsmenus > li.fixwidth > a { display:inline-block; }
+	#dsmenus > li.fixwidth:after { content:"\f13a"; font-family:FontAwesome; font-size:18px; color:#cd3236; position:absolute; right:10px; top:10px; }
+	#dsmenus > li:before { content:''; width:100%; height:4px; display:block; background:url('../images/zk_line.png') no-repeat center top; }
+	#dsmenus .dssubmenus { position:relative; width:auto !important; left:auto; padding:0px 0px 15px 20px; margin:0px; }
+	#dsmenus .dssubmenus > li { float:none; border-left:0px; padding:0px; }
+	#dsmenus .dssubmenus > li a { padding:3px 0px; display:block; }
+	
+	/*Spalten*/
+	#dscolumn1_2, #dscolumn2_2 { width:388px !important; }
+	#dscolumn1_2 { background-position:402px 34px; }
+	
+	/*Reservier-Schaltfläche*/
+	img#reserve-image {  }
+	a#reserve-btn { top:110px; }
+	
+	/*Artikelbilder*/
+	.dsimage_1, .dsimage_2, .dsimage_3, .dsimage_4, .dsimage_5 { max-width:100%; }
+	.dsarticle img { max-width:100%; height:auto; }
+	
+	/*Popup*/
+	.ajaxdiv { width:866px; margin-left:-433px; }
+	.popupbody .gallerywrapper, .popupbody .description.fixwidth { width:398px; }
+	
+	/*Formular*/
+	.f1_col1of2, .f1_col2of2 { width:388px; }
+	.f1_row .customselect { width:236px; }
+	.f1_row input[type=text], .f1_row input[type=password], .f1_row textarea { width:226px; }
+	.f1_row input[type=file] { width:376px; }
+	.f1_row.lunch input[type=file] { margin-bottom:3px; }
+	.f1_row input[type=text].datum { width:105px; }
+	.f1_row input[type=text].zeit { width:105px; margin-left:4px; }
+	.f1_row textarea.fullwidth { width:376px; }
+	.f1_row .checkboxCheck label { width:194px; }
+	.f1_spamfilter input[type=text] { width:35px; }
+	.f1_row button[type=submit] { float:right; margin-left:0px; }
+	
+	/*Picasalow*/
+	.handyslider { display:block; }
+	.cpicasalow { display:none; }
+	
+	/*CPdf*/
+	.cpdf .list > a { width:179px; }
+	.cpdf .nav > a { margin-right:7px; }
+	
+	/*CTeam*/
+	.cteam .person { width:378px; }
+	.cteam .person:nth-child(2n) { margin-right:0px; } 
+	.cteam .person:nth-child(3n) { margin-right:30px; }
+	
+	/*CNews*/
+	.cnews .list .entry { width:378px; }
+	
+	/*CShop*/
+	.cshop .f1_row textarea { width:644px; }
+	
+	/*Online-Reservation*/
+	.creservation .popupbody .greenbox input { width:240px; }
+	
+	/*Footer*/
+	#dssitefooter #address { display:none; }
+	#dssitefooter > div:not(.cb) { margin-left:34px; }
+	#dssitefooter > div.first { margin-left:0px; }
+	#mobilefooterclear { display:block; }
+	#dssitefooter > #mobilefooter { 
+		display:block; float:none; width:auto; height:auto; margin:30px 0px 0px 0px; padding-top:14px; 
+		background:url('../images/zk_line.png') no-repeat center top; font-family:Lora,Arial,sans-serif; 
+	}
+}
+
+/*892px - 768px (iPad Hochformat)*/
+@media screen and (max-width:892px) {
+	#responsive { background-color:red; color:#fff; }
+	html { font-size: 65% !important; -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */ }
+	/*#wrapper { width:742px; margin-left:-371px; }*/
+	#dssubbody { width:742px; }
+	#dssiteheader { width:742px !important; }
+	#dsmain, #dssitefooter { width:682px !important; }
+	#links .plus, #links .minus { display:none; }
+	
+	#dscolumn1_2, #dscolumn2_2 { width:326px !important; }
+	#dscolumn1_2 { background-position:340px 34px; }
+	
+	/*Popup*/
+	.ajaxdiv { width:742px; margin-left:-371px; }
+	.popupbody .gallerywrapper, .popupbody .description.fixwidth { width:336px; }
+	
+	/*Formular*/
+	.f1_col1of2, .f1_col2of2 { width:326px; }
+	.f1_row .customselect { width:174px; }
+	.f1_row input[type=text], .f1_row input[type=password], .f1_row textarea { width:164px; }
+	.f1_row input[type=file] { width:314px; }
+	.f1_row input[type=text].datum { width:74px; }
+	.f1_row input[type=text].zeit { width:74px; margin-left:4px; }
+	.f1_row textarea.fullwidth { width:314px; }
+	.f1_row .checkboxCheck label { width:100%; }
+	.f1_spamfilter input[type=text] { width:35px; }
+	.f1_row label.spamfilter { width:auto; height:19px; overflow:hidden; }
+	.f1_row label.spamfilter > strong { display:block; }
+	
+	/*CPdf*/
+	.cpdf .list > a { float:none; width:auto; display:block; margin-bottom:5px; }
+	.cpdf .list > a.two { float:none; }
+	
+	/*CTeam*/
+	.cteam .person { width:316px; }
+	
+	/*CNews*/
+	.cnews .list .entry { width:316px; }
+	
+	/*CShop*/
+	.cshop .f1_row textarea { width:520px; }
+	
+	/*Online-Reservation*/
+	.creservation .popupbody .greenbox input { width:179px; }
+	.creservation .popupbody .tags-wrapper .tag { min-width:44px; }
+	.creservation .popupbody .tags-wrapper label.tag.limit { min-width:98px; }
+	
+	/*Footer*/
+	#dssitefooter > div:not(.cb) { margin-left:2px; }
+	#dssitefooter .besuchensie{width:100% !important}
+	
+}
+
+/*ab 767px - 568px (iPhone 5 Querformat)*/
+@media only screen and (max-width: 767px) {
+	#responsive { background-color:yellow; color:#000; }
+	html { font-size: 80% !important; -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */ }
+	/*#wrapper { width:542px; margin-left:-271px; }*/
+	#dssubbody { width:542px; }
+	#dssiteheader { width:542px !important; }
+	#dsmain, #dssitefooter { width:482px !important; }
+	
+	/*Sprachlinks*/
+	/*#links { top:178px; right:30px; left:auto; }*/
+	
+	/*Reservation-Woman*/
+	img#reserve-image { display:none; }
+	
+	/* Header Gallerie */
+	#headergallery { height:230px; }
+	
+	#dscolumn1_2, #dscolumn2_2 { float:none; width:auto !important; display:block; }
+	#dscolumn1_2 { padding-right:0px; background:none; }
+	
+	/*Popup*/
+	.ajaxdiv { width:542px; margin-left:-271px; }
+	.popupbody .gallerywrapper { width:502px; height:320px; padding-left:0px; background:none; }
+	.popupbody .description.fixwidth { width:502px; }
+	
+	/*Formular*/
+	.f1_col1of2, .f1_col2of2 { width:482px; }
+	.f1_col2of2.line { padding-left:0px; background:none; }
+	.f1_row label { padding-top:4px; }
+	.f1_row .customselect { width:330px; }
+	.f1_row input[type=text], .f1_row input[type=password], .f1_row textarea { width:320px; }
+	.f1_row input[type=file] { width:470px; }
+	.f1_row input[type=text].datum { width:152px; }
+	.f1_row input[type=text].zeit { width:152px; margin-left:4px; }
+	.f1_row textarea.fullwidth { width:470px; }
+	.f1_spamfilter input[type=text] { width:35px; }
+	.f1_row .checkboxCheck label { width:241px; }
+	.f1_row label.spamfilter { width:auto; height:auto; overflow:hidden; }
+	.f1_row label.spamfilter > strong { display:inline-block; }
+	
+	/*CPdf*/
+	.cpdf .list > a { float:left; width:226px; }
+	.cpdf .list > a.two { float:right; }
+	.cpdf .nav > a { display:block; }
+	.popupbody iframe { height:320px; }
+	
+	/*CTeam*/
+	.cteam .person { width:472px; margin-right:0px; }
+	.cteam .person:nth-child(3n) { margin-right:0px; }
+	
+	/*CNews*/
+	.cnews .list .entry { width:472px; }
+	.cnews .list .entry:nth-child(2n+1) { margin-left:0px; }
+	.cnews .list .entry p.description { height:50px; }
+	
+	/*CShop*/
+	.cshop .product .table .artnr { width:110px; }
+	.cshop .product .table .currency { display:none; }
+	.cshop .f1_row textarea { width:320px; }
+	
+	/*Online-Reservation*/
+	.creservation .popupbody .greenbox input { width:227px; }
+	.creservation .popupbody .greenbox input[type=password] { margin-right:0px; }
+	.creservation .popupbody .greenbox button { margin-top:7px; min-width:239px; }
+	.creservation .f1_col1of2, .creservation .f1_col2of2 { float:none; width:100%; }
+	.creservation .f1_row label { width:170px; }
+	.creservation .popupbody .tags-wrapper .tag { min-width:45px; }
+	.creservation .popupbody .tags-wrapper .tag.more-pax { min-width:155px; }
+	.creservation .popupbody .tags-wrapper label.tag.limit { min-width:100px; }
+	
+	/*jQuery UI - Datepicker*/
+	.ui-datepicker .ui-datepicker-header { height:28px; }
+	
+	/*Footer*/
+	#dssitefooter > div:not(.cb) { width:134px; margin-bottom:10px; margin-left:40px; }
+	#dssitefooter > div.first, #dssitefooter > div.fourth { margin-left:0px; }
+	#dssitefooter > div.hidden { display:block; }
+	#dssitefooter > div.hidden a.circle { background-color:#cd3236; }
+	#dssitefooter > div.hidden a.circle:hover { background-color:#a9a679; }
+	
+	/* Picasalow Handyslider */
+	.handyslider .cpicasaslide { height:300px !important; }
+}
+
+/*von 567px bis 480px (iPhone 4 Querformat)*/
+@media only screen and (max-width: 567px) {
+	#responsive { background-color:green; color:#fff; }
+	/*#wrapper { width:454px; margin-left:-227px; }*/
+	#dssubbody { width:454px; }
+	#dssiteheader { width:454px !important; }
+	#dsmain, #dssitefooter { width:394px !important; }
+	
+	/*Popup*/
+	.ajaxdiv { width:454px; margin-left:-227px; }
+	.popupbody .gallerywrapper, .popupbody .description.fixwidth { width:414px; }
+	
+	/*Formular*/
+	.f1_col1of2, .f1_col2of2 { width:394px; }
+	.f1_row label { padding-top:4px; }
+	.f1_row .customselect { width:242px; }
+	.f1_row input[type=text], .f1_row input[type=password], .f1_row textarea { width:232px; }
+	.f1_row input[type=file] { width:382px; }
+	.f1_row input[type=text].datum { width:108px; }
+	.f1_row input[type=text].zeit { width:108px; margin-left:4px; }
+	.f1_row .checkboxCheck input[type=text] { width:135px; }
+	.f1_row textarea.fullwidth { width:382px; }
+	.f1_spamfilter input[type=text] { width:35px; }
+	
+	/*CPdf*/
+	.cpdf .list > a { float:none; width:auto; display:block; margin-bottom:5px; }
+	.cpdf .list > a.two { float:none; }
+	
+	/*CTeam*/
+	.cteam .person { width:384px; }
+	
+	/*CNews*/
+	.cnews .list .entry { width:384px; }
+	
+	
+	/*CShop*/
+	.cshop .product .table .row input[type=text] { width:40px; }
+	.cshop .f1_row textarea { width:232px; }
+	.cshop .product .table .row > div { vertical-align:top; }
+	.cshop .product .table .count { white-space:normal !important; }
+	
+	/*Online-Reservation*/
+	.creservation .popupbody .greenbox input { width:388px; margin:0px 0px 7px 0px; }
+	.creservation .popupbody .greenbox button { margin-top:0px; min-width:195px; }
+	.creservation .popupbody .tags-wrapper .tag { min-width:49px; }
+	.creservation .popupbody .tags-wrapper .tag.more-pax { min-width:167px; }
+	.creservation .popupbody .tags-wrapper label.tag.limit { min-width:108px; }
+	
+	/*Footer*/
+	#dssitefooter > div:not(.cb) { margin-left:42px; }		
+}
+
+/*iPhone 6 Hochformat (375px)*/
+@media only screen and (max-width: 479px) {
+	#responsive { background-color:magenta; color:#fff; }
+	/*#wrapper { width:294px; margin-left:-147px; }*/
+	#dssubbody { width:350px; }
+	#dssiteheader { width:350px !important; }
+	#dsmain, #dssitefooter { width:290px !important; }
+	
+	#links { top:10px; left:10px; }
+	
+	/*Menu*/
+	#menutrigger { left:10px; }
+	#dsmenus.open { padding-right:10px; padding-left:10px; }
+	
+	/*Reservier-Schaltfläche*/
+	a#reserve-btn { top:130px; right:10px; width:112px; min-height:112px; }
+	a#reserve-btn img { width:98px; }
+	
+	/*#headergallery { height:200px; }*/
+	
+	/*Popup*/
+	.ajaxdiv { width:350px; margin-left:-175px; }
+	.popupbody .gallerywrapper { width:310px; height:200px; }
+	.popupbody .description.fixwidth { width:310px; }
+	.popupbody iframe { height:200px; }
+	
+	/*Formular*/
+	.f1_col1of2, .f1_col2of2 { width:290px; }
+	.f1_row label { padding-top:4px; width:206px; }
+	.f1_row .customselect { width:288px; }
+	.f1_row input[type=text], .f1_row input[type=password], .f1_row textarea { width:278px; }
+	.f1_row input[type=file] { width:222px; }
+	.f1_row input[type=text].datum { width:103px; }
+	.f1_row input[type=text].zeit { width:103px; margin-left:4px; }
+	.f1_row .checkboxCheck input[type=text] { width:226px; }
+	.f1_row textarea.fullwidth { width:278px; }
+	.f1_spamfilter input[type=text] { margin-right:0px; }
+	.f1_spamfilter strong:before { content:''; }
+	.f1_spamfilter:after { content:"\f077"; font-family:FontAwesome; font-size:14px; color:#cd3236; font-weight:bold; display:inline-block; margin:3px 0px 0px 4px; }
+	.formbest .fa { padding-bottom:110px; }
+	.f1_spamfilter:after { display:none; }
+	.f1_row button[type="submit"] { margin-top:10px;}
+	
+	/*CTeam*/
+	.cteam .person { width:280px; }
+	.cteam .person .placeholder { float:none; width:120px; height:128px; margin-bottom:5px; float:left }
+	.cteam .person .zusatz { margin-top:10px; }
+	.cteam .person h3 { overflow:visible; white-space:normal; }
+	
+	/*CNews*/
+	.cnews .list .entry { width:280px; height:auto; }
+	.cnews .list .entry .placeholder { float:none; width:280px; height:128px; margin:0px 0px 5px 0px; }
+	.cnews .list .entry .placeholder > div { background-position:center -30px; }
+	
+	/*CShop*/
+	.cshop .product .placeholder { float:none; width:100%; height:128px; margin:0px 0px 5px 0px; }
+	.cshop .product .placeholder  > div { background-position:center -30px; }
+	.cshop .product .table .unit { display:none; }
+	.cshop .product h2 { padding-right:0px; }
+	.cshop .f1_row textarea { width:278px; }
+	
+	/*Reservationstool*/
+	.creservation .tablecloth .ui-datepicker { width:235px; }
+	.creservation .tablecloth:before, .creservation .tablecloth:after { display:none; }
+	.creservation .popupbody .greenbox input { width:284px; }
+	.creservation .popupbody .greenbox button { min-width:296px; margin-right:0px; }
+	.creservation .popupbody .greenbox button#forgot { margin-top:7px; }
+	.creservation .popupbody .f1_row .customselect { width:308px; }
+	.creservation .popupbody .f1_row input, .creservation .popupbody .f1_row textarea { width:298px; }
+	.creservation .popupbody .f1_spamfilter { position:relative; }
+	.creservation .popupbody .f1_spamfilter:after { position:absolute; top:60px; }
+	.creservation .popupbody .f1_row button[type=submit] { width:100%; height:60px; text-transform:uppercase; font-weight:bold; margin-top:10px; }
+	.creservation .popupbody .tags-wrapper { width:312px; }
+	.creservation .popupbody .tags-wrapper .tag { min-width:52px; }
+	.creservation .popupbody .tags-wrapper .tag.more-pax { min-width:182px; }
+	.creservation .popupbody .tags-wrapper label.tag.limit { min-width:118px; }
+	
+	/*Footer*/
+	#dssitefooter > div:not(.cb) { width:112px; height:112px; margin-left:0px; margin-bottom:5px; }
+	#dssitefooter > div:not(.cb):nth-child(2n+1) { margin-left:66px; }
+	#dssitefooter > div .circle { width:112px; min-height:112px; }
+	#dssitefooter > div .circle img { width:98px; }
+	#dssitefooter { font-size:13px;}
+
+	
+	/* Picasalow Handyslider */
+	.handyslider .cpicasaslide { height:350px !important; }
+}
+
+
+/*iPhone 4/5 Hochformat (320px)*/
+@media only screen and (max-width: 374px) {
+	#responsive { background-color:black; color:#fff; }
+	/*#wrapper { width:294px; margin-left:-147px; }*/
+	#dssubbody { width:294px; }
+	#dssiteheader { width:294px !important; }
+	#dsmain, #dssitefooter { width:234px !important; }
+	
+	/*Popup*/
+	.ajaxdiv { width:294px; margin-left:-147px; }
+	.popupbody .gallerywrapper { width:254px; height:200px; }
+	.popupbody .description.fixwidth { width:254px; }
+
+	/*Formular*/
+	.f1_col1of2, .f1_col2of2 { width:234px; }
+	.f1_row label { padding-top:4px; }
+	.f1_row .customselect { width:232px; }
+	.f1_row input[type=text], .f1_row input[type=password], .f1_row textarea { width:222px; }
+	.f1_row input[type=file] { width:222px; }
+	.f1_row input[type=text].datum { width:103px; }
+	.f1_row input[type=text].zeit { width:103px; margin-left:4px; }
+	.f1_row .checkboxCheck input[type=text] { width:226px; }
+	.f1_row textarea.fullwidth { width:222px; }
+	.f1_spamfilter input[type=text] { width:72px; margin-right:0px; }
+	.f1_spamfilter strong:before { content:''; }
+	.f1_spamfilter:after { content:"\f077"; font-family:FontAwesome; font-size:14px; color:#cd3236; font-weight:bold; display:inline-block; margin:3px 0px 0px 4px; }
+	.formbest .fa { padding-bottom:110px; }
+	
+	/*CTeam*/
+	.cteam .person { width:224px; }
+	.cteam .person .placeholder { float:none; width:224px; height:128px; margin-bottom:5px; }
+	.cteam .person .zusatz { margin-top:10px; }
+	.cteam .person .besch { width:224px; }
+		
+	/*CNews*/
+	.cnews .list .entry { width:224px; height:auto; }
+	.cnews .list .entry .placeholder { float:none; width:224px; height:128px; margin:0px 0px 5px 0px; }
+	
+	/*CShop*/
+	.cshop .product .placeholder { float:none; width:224px; height:128px; margin:0px 0px 5px 0px; }
+	.cshop .product .table .unit { display:none; }
+	.cshop .product h2 { padding-right:0px; }
+	.cshop .f1_row textarea { width:222px; }
+	
+	/*Reservationstool*/
+	.creservation .tablecloth .ui-datepicker { width:235px; }
+	.creservation .tablecloth:before, .creservation .tablecloth:after { display:none; }
+	.creservation .popupbody .greenbox input { width:228px; }
+	.creservation .popupbody .greenbox button { min-width:240px; margin-right:0px; }
+	.creservation .popupbody .greenbox button#forgot { margin-top:7px; }
+	.creservation .popupbody .f1_row .customselect { width:252px; }
+	.creservation .popupbody .f1_row input, .creservation .popupbody .f1_row textarea { width:242px; }
+	.creservation .popupbody .f1_spamfilter { position:relative; }
+	.creservation .popupbody .f1_spamfilter:after { position:absolute; top:60px; }
+	.creservation .popupbody .f1_row button[type=submit] { width:100%; height:60px; text-transform:uppercase; font-weight:bold; margin-top:10px; }
+	.creservation .popupbody .tags-wrapper { width:256px; }
+	.creservation .popupbody .tags-wrapper .tag { min-width:54px; }
+	.creservation .popupbody .tags-wrapper .tag.more-pax { min-width:182px; }
+	.creservation .popupbody .tags-wrapper label.tag.limit { min-width:118px; }
+	
+	/*Footer*/
+	#dssitefooter > div:not(.cb):nth-child(2n+1) { margin-left:10px; }
+	#dssitefooter .besuchensie { text-align:center; float:none;}
+	#dssitefooter .besuchensie span {padding:10px 0px 10px 0px; display:block; }
+	#dssitefooter .besuchensie a { float:none; display:block; }
+}

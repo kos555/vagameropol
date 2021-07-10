@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.cshop .accordion {}
+.cshop .accordion-head { 
+	font-family:Lora,Arial,sans-serif; font-size:14px; font-size:1.4rem; font-weight:bold; color:#313131; text-transform:uppercase; 
+	padding:5px; background:url('../images/zk_line.png') no-repeat center bottom; cursor:pointer;
+}
+.cshop .accordion-head:hover { background-color:#f5f5f5; }
+.cshop .accordion-head:before { content:"\f105"; font-family:FontAwesome; font-weight:400; margin-right:9px; }
+
+.cshop .accordion-body { display:none; }
+.cshop .product { position:relative; padding:5px; }
+.cshop .product .content { position:relative; }
+.cshop .product .placeholder { float:left; width:100px; height:100px; display:block; margin-right:10px; background-color:#cd3236; cursor:pointer; }
+.cshop .product .placeholder.loading { background:url('../images/loader_red.gif') no-repeat center center #cd3236 !important; }
+.cshop .product .placeholder > div { width:100%; height:100%; display:block; background-repeat:no-repeat; background-position:center center; background-size:cover; }
+.cshop .product h2 { font-family:Lora; color:#cd3236; font-size:14px; font-size:1.4rem; line-height:19px; line-height:1.9rem; font-weight:700; text-transform:uppercase; display:block; margin:0px; padding:0px 16px 10px 0px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; cursor:pointer; }
+.cshop .product .table { width:auto; }
+.cshop .product .table .row:nth-child(2n) { background-color:#f5f5f5; }
+.cshop .product .table .artnr { width:410px; }
+.cshop .product .table .unit { width:100px; }
+.cshop .product .table .currency { width:100px; }
+.cshop .product .table .price { width:100px; }
+.cshop .product .table .count { width:100px; }
+.cshop .product .table .row input[type=text] { width:86px; height:14px; margin:1px 1px 1px 0px; }
+
+.cshop .accordion-head.open:before { content:"\f107"; margin-right:5px; }
+
+/*Formular*/
+.cshop .adresse { margin-top:30px; }
+.cshop h3 { font-family:Lora,Arial,sans-serif; color:#313131; font-size:14px; font-size:1.4rem; font-weight:bold; text-transform:uppercase; margin:0px; padding-bottom:15px; }
+.cshop .f1_row textarea { width:768px; }
+.cshop .f1_row button { margin-left:0px; float:right; }
+
+/*Effekte*/
+.cshop .accordion-head { -webkit-transition:background 0.2s; -moz-transition:background 0.2s; -o-transition:background 0.2s; transition:background 0.2s; }
+.cshop .product .table .row > div { -webkit-transition:background 0.2s; -moz-transition:background 0.2s; -o-transition:background 0.2s; transition:background 0.2s; white-space:nowrap; }
+
+/*Breaks*/
+.cshop .product:after, .cshop .product .content:after, .cshop .adresse:after { content:''; display:block; clear:both; height:0px; }
+.cshop .product .dsbutton { position:absolute; left:0px; top:0px; line-height:0px; z-index:1; }

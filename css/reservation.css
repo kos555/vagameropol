@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+#reservation-trigger { display:none; }
+
+.creservation .print { margin-top:25px; width:1055px; background-color:#fff; position:fixed; left:50%; margin-left:-550px; padding:20px 0px 20px 30px; bottom:0px; }
+.creservation .print:after { content:''; display:block; clear:both; }
+.creservation .print a.button { float:left; margin:0px 8px 8px 0px; }
+.creservation .print > img { float:left; margin:7px 0px 0px 8px; display:none; }
+
+#creservation_loader { position:fixed; width:100%; height:100%; display:none; left:0px; top:0px; background:url('../images/loadingcircle_64px.gif') no-repeat center center rgba(255,255,255,0.7); z-index:2; }
+
+/*Searchpanel*/
+.creservation .searchpanel:after, .creservation .searchpanel > form:after { content:''; display:block; clear:both; height:0px; }
+.creservation .searchpanel a.button { float:none; display:inline-block; width:214px; margin-bottom:10px; }
+.creservation .searchpanel a#empty-reservation { margin-bottom:20px; }
+.creservation .searchpanel .placeholder { height:40px; display:block; }
+.creservation .searchpanel .customselect { width:226px; }
+.creservation .searchpanel div { margin-bottom:5px; }
+.creservation .searchpanel input[type=text] { width:216px; margin-bottom:6px; }
+.creservation .searchpanel button { float:left; width:110px; margin-bottom:3px; }
+.creservation .searchpanel button#reservation_submit { margin-right:8px; }
+.creservation .searchpanel button#reservation_today { width:110px; margin:0px 8px 20px 0px; }
+.creservation .searchpanel button#reservation_cleardate { width:110px; margin:0px 0px 20px 0px; }
+.creservation .searchpanel .editbalken { margin-top:20px; }
+.creservation .searchpanel .space { margin-bottom:20px; }
+.creservation .searchpanel .ui-datepicker-inline { width:100%; }
+
+/*Liste*/
+.creservation .list { position:relative;padding-bottom: 20px; }
+.creservation .date-big { display:block; margin-bottom:5px; background-color:#999; color:#fff; padding:5px 3px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.creservation .date-big .fa { float:right; color:#fff; margin:2px 10px 2px 0px; }
+.creservation .date-big.margintop { margin-top:20px; }
+.creservation .alert { padding:8px 14px; margin:0px 0px 10px 0px; background-color:#f2dede; color:#b94a48; border:1px #eed3d7 solid; }
+.creservation .alert .titel { font-weight:700; display:block; }
+.creservation .time-of-day { display:block; margin:25px 0px 10px 0px; font-weight:700; font-size:1.5rem; color:#999; line-height:1.5rem; width:230px; float:left; }
+.creservation .time-of-day:nth-child(2n+1) { margin-top:25px; }
+.creservation .anzahlres { display:block; margin:25px 0px 10px 10px; font-weight:700; font-size:1.5rem; color:#000; line-height:1.5rem; float:right; text-align:right; }
+.creservation .anzahlres span { color:#cd3236; padding-left:5px; }
+.creservation .entry { position:relative; border-bottom:1px #aaa solid; padding:5px; }
+.creservation .entry.new { border-left:7px #cd3236 solid; }
+.creservation .entry:hover { background-color:#dedede; }
+.creservation .entry h2 { display:inline-block; color:#000000; max-width:340px; margin:0px 0px 5px 17px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.creservation .entry h2.over { margin-left:0px; }
+.creservation .entry h2 span { color:#ccc; }
+.creservation .entry .icons { position:absolute; top:5px; right:5px; color:#000000; }
+.creservation .entry .icons > div { display:inline-block; min-width:20px; margin-left:10px; padding:2px; text-align:right; }
+.creservation .entry .comment > div { display:none; }
+.creservation .entry .pax { cursor:default; min-width:110px !important; }
+.creservation .entry .font-pax { font-size:1.5rem; font-weight:bold; }
+.creservation .entry .font-table { font-size:1.5rem; font-weight:bold; line-height:15px; max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.creservation .entry .icons .fa { position:relative; font-size:1.5rem; padding-left:3px; }
+.creservation .entry .icons .fa-desktop, .creservation .entry .icons .fa-comment { cursor:pointer; }
+.creservation .entry h3 { color:#999999; font-weight:400; display:inline-block; max-width:700px; margin:0px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-bottom:7px; }
+.creservation .entry .text:after { content:''; display:block; clear:both; height:0px; }
+.creservation .entry .text > div { float:left; min-width:120px; margin-right:18px; }
+.creservation .entry .text div.date { display:none; }
+.creservation .entry .text div.times { width:180px; }
+.creservation .entry .text div.category { min-width:0px; }
+.creservation .entry .text div.category img { float:left; margin:0px 1px; }
+.creservation .entry .text div.note { display:block; padding:5px 0px; margin:5px 0px 0px 0px; max-width:600px; }
+.creservation .entry .text div.updated { float:right; text-align:right; color:#aaa; margin-right:0px; }
+.creservation .entry .text .fa { font-size:14px; }
+.creservation .entry .text p { display:inline-block; margin:0px; }
+.creservation .entry .dsbutton { position:absolute; top:12px; left:5px; line-height:0; }
+.creservation .entry .highlight { background-color:#FF3; }
+.creservation .nodata { display:block; }
+
+/*Kontextmenu*/
+.creservation .bubble > div { position:relative; padding-left:3px; min-height:15px; display:inline-block; text-align:right; cursor:pointer; }
+.creservation .bubble .contextmenu { 
+	position:absolute; width:302px; top:50%; margin-top:-65px; right:14px; 
+	background:url('../images/zk_bg_context.png') no-repeat right center; cursor:default; text-align:left; display:none; z-index:3;
+}
+.creservation .bubble .contextmenu.tischzuweisung { width:550px; margin-top:-163px; }
+.creservation .bubble .contextmenu > form, .creservation .bubble .contextmenu > div { 
+	display:block; padding:10px 0px 7px 10px; margin-right:14px; border:1px #aaa solid; border-right:0px; height:110px; 
+	box-shadow:0px -2px 5px #aaa; font-family:Open Sans; font-size:1.3rem; line-height:1.8rem; color:#313131; cursor:pointer;
+}
+.creservation .bubble .bubble_close { position:absolute; right:25px; top:8px; color:#000; }
+.creservation .bubble .contextmenu > form { height:300px; }
+.creservation .bubble .contextmenu .tischcontent { height:225px; overflow:auto; }
+.creservation .bubble .contextmenu .tischdef { padding-bottom:3px; border-bottom:1px solid #999; margin-bottom:10px; width:516px; }
+.creservation .bubble .contextmenu p { margin:0px 10px 3px 0px; height:75px; overflow:auto; }
+.creservation .bubble .contextmenu .title { font-weight:700; color:#313131; margin:0px 10px 10px 0px; }
+.creservation .bubble .contextmenu .title span { font-weight:400; }
+.creservation .bubble .contextmenu label { display:inline-block; width:120px; margin-bottom:0px; }
+.creservation .tischaktiv { color:#cd3236; }
+.creservation .tischaktivicon { height:10px; }
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/*Stornierungen*/
+.creservation .cancels { width:100%; display:table; border-bottom:1px #aaa solid;  }
+.creservation .cancels .row { display:table-row; }
+.creservation .cancels .row.font-medium { font-weight:700; }
+.creservation .cancels .row .column { display:table-cell; padding:5px; }
+.creservation .cancels .row .column.dsbutton { width:20px; }
+
+.creservation .cancels .row.font-medium .column { border-bottom:1px #aaa solid; }
+.creservation .cancels .row:hover { background-color:#f1f1f1; }
+.creservation .cancels .row.font-medium:hover { background-color:transparent; }
+
+/*Classes*/
+.creservation .font-big { font-size:15px; line-height:20px; font-size:1.5rem; line-height:2rem; font-family:'Open Sans',Verdana,sans-serif; font-weight:700; }
+.creservation .font-medium { font-size:13px; line-height:15px; font-size:1.3rem; line-height:1.5rem; font-family:'Open Sans',Verdana,sans-serif; }
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/*Online-Reservation*/
+.creservation .popupbody .steps h2 { padding-bottom:7px; }
+.creservation .popupbody .steps:not(.form) { padding-bottom:7px; background:url('../images/zk_line.png') no-repeat center bottom; }
+.creservation .popupbody .steps.times, .creservation .popupbody .steps.pax, .creservation .popupbody .steps.form { display:none; }
+.creservation .popupbody .steps, .creservation .popupbody .formbest, .creservation .popupbody .error { margin-bottom:15px; font-size:1.3em; line-height:1.5em; }
+.creservation .popupbody .steps h2 { color:#cd3236; font-weight:700; text-transform:uppercase; }
+.creservation .popupbody .steps .ui-datepicker { 
+	margin:0 auto; -webkit-box-shadow:0px 0px 5px #999; -moz-box-shadow:0px 0px 5px #999; -o-box-shadow:0px 0px 5px #999; box-shadow:0px 0px 5px #999; 
+}
+.creservation .popupbody .steps .ui-datepicker-month { width:100px; }
+.creservation .popupbody .steps .ui-datepicker-year { width:59px; }
+.creservation .popupbody .tablecloth { position:relative; padding:10px 0px; background:url('../images/zk_background1.jpg') no-repeat center bottom; }
+.creservation .popupbody .tablecloth:before, .creservation .popupbody .tablecloth:after { content:''; position:absolute;  width:23px; height:135px; display:block; top:40px; left:50%; }
+.creservation .popupbody .tablecloth:before { background:url('../images/zk_fork.png') no-repeat left top; margin-left:-170px; }
+.creservation .popupbody .tablecloth:after { background:url('../images/zk_knife.png') no-repeat left top; margin-left:147px; }
+
+/*Tags*/
+.creservation .popupbody .tags-wrapper:after { content:''; display:block; clear:both; height:0px; }
+.creservation .popupbody .tags-wrapper .tag { float:left; min-width:41px; border:1px #ccc solid; padding:2px 3px; margin:0px 2px 2px 0px; text-align:center; }
+.creservation .popupbody .tags-wrapper .tag.disabled { background-color:#eee; cursor:default; display:none; }
+.creservation .popupbody .tags-wrapper label.tag { cursor:pointer; }
+.creservation .popupbody .tags-wrapper label.tag.limit { min-width:92px; }
+.creservation .popupbody .tags-wrapper label.tag:not(.disabled):hover, .creservation .popupbody .tags-wrapper label.tag.active { border:1px #cd3236 solid; background-color:#cd3236; color:#fff; }
+.creservation .popupbody .tags-wrapper label.tag input[type=radio] { display:none; }
+
+/*Formular*/
+.creservation .popupbody .greenbox { position:relative; display:block; background-color:#a9a679; color:#fff; padding:7px; margin-bottom:15px; }
+.creservation .popupbody .greenbox:after { content:''; display:block; clear:both; height:0px; }
+.creservation .popupbody .greenbox input { width:287px; margin:0px 10px 0px 0px; }
+.creservation .popupbody .greenbox button { float:left; min-width:138px; }
+.creservation .popupbody .greenbox button#login { margin-right:10px; }
+.creservation .popupbody .greenbox .txt { padding-top:7px; }
+.creservation .popupbody .f1_row textarea { height:55px; }
+.creservation .popupbody .f1_row button[type=submit]{ margin-left:0px; float:right; }
+.creservation #login_feedback { display:none; padding-bottom:7px; }
+.creservation #login_feedback > div { display:block; padding:7px 7px 7px 35px; color:#fff; }
+.creservation #login_feedback > div:before { position:absolute; left:21px; font-family:FontAwesome; font-size:14px; }
+.creservation #login_feedback > div.check:before { content:"\f00c"; }
+.creservation #login_feedback > div.exclamation:before { content:"\f071"; }
+.creservation #login_feedback > div.times:before { content:"\f00d"; }
+.creservation #login_feedback .success { background-color:#a9a679; }
+.creservation #login_feedback .warning { background-color:#eebbbc; }
+.creservation #login_feedback .danger { background-color:#cd3236; }
+
+
+/*Effekt Transitions*/
+.creservation .entry { -webkit-transition:background .4s; -moz-transition:background .4s; -ms-transition:background .4s; -o-transition:background .4s; transition:background .4s; }
+.creservation .popupbody .tags-wrapper label.tag { -webkit-transition:all .1s; -moz-transition:all .1s; -ms-transition:all .1s; -o-transition:all .1s; transition:all .1s; }
+
+
+
+
+

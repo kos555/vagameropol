@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*Picasalow*/
+.cpicasalow:after { content:''; display:block; clear:both; }
+.cpicasalow table { width:100%; padding:0px; border:0px; border-spacing:0px; border-collapse:separate; }
+.cpicasalow table td { padding:0px; }
+.cpicasalow table .thumbnail { position:relative; overflow:hidden; background:url('../images/loader_1.gif') no-repeat center center; }
+.cpicasalow table a.imagelink { display:block; line-height:0px; }
+.cpicasalow table img { border:0px; }
+.cpicasalow table .download { position:absolute; bottom:8px; right:5px; background-color:#fff; color:#cd3236; padding:2px; font-size:14px; line-height:13px; }
+.cpicasalow table .download:hover { background-color:#cd3236; color:#fff; }
+.cpicasalow table .blank { display:block; height:10px; }
+.cpicasalow table .download { -webkit-transition:all 0.3s; -moz-transition:all 0.3s; -o-transition:all 0.3s; transition:all 0.3s; }
+
+/*Galerie > Picasalow > Slider*/
+.handyslider .cpicasaslide { height:350px; }
+.cis-gallery { margin-bottom:0px; }
+.cis-gallery .nav-points { position:absolute; height:auto; left:0px; bottom:0px; border:0px; text-align:left; line-height:0px; }
+.cis-gallery .nav-points .points-content .point { width:10px; height:10px; margin:0px 0px 5px 5px; background-color:#a9a679; border:1px #fff solid; border-radius:5px; }
+.cis-gallery .nav-points .points-content .point.aktiv { background-color:#cd3236; border:1px #fff solid; }
+.cis-gallery .nav-points .points-content .point span { display:none; }
+.cis-gallery .overflow .inner-content .image-content .comments { height:55px; overflow:hidden; }
+.cis-gallery .overflow .inner-content .image-content .comments .comments-content { margin:5px 10px; }

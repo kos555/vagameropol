@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.cpdf .list:after { content:''; display:block; clear:both; height:0px; }
+.cpdf .list > a {font-family:Lora,Arial,sans-serif; float:left; width:210px; text-transform:uppercase; padding-bottom:5px; min-height:22px; /*IE Fix*/ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.cpdf .list > a.two { float:right; }
+.cpdf .list > a > div { width:20px; min-height:12px; display:inline-block; margin-right:5px; background:no-repeat center center; background-size:contain; }
+.cpdf .list > a span { font-weight:700; }
+
+/*Popview*/
+.cpdf .nav { text-align:center; margin-bottom:19px; }
+.cpdf .nav > a { font-family:Lora,Arial,sans-serif; font-size:14px; font-weight:bold; text-transform:uppercase; margin-right:25px; }
+.cpdf .nav > a.active { color:#cd3236; }
+.cpdf .nav > a.last { margin-right:0px; }
+
+/*Poplink*/
+.cpdflink { margin-top:20px;}
+.cpdflink a { color:#cd3236; }
+.cpdflink a:hover { color:#313131; }
+.cpdflink .poplink:after { content:"\f105"; font-family:FontAwesome; margin-left:4px; }

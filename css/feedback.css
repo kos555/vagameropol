@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.cfeedback table { width:100%; border:0px; border-collapse:separate; border-spacing:0px; }
+.cfeedback table .category { font-family:Lora,Arial,sans-serif; color:#cd3236; font-size:14px; font-size:1.4rem; line-height:19px; line-height:1.9rem; font-weight:700; text-transform:uppercase; }
+.cfeedback table .category:after { content:''; display:block; height:4px; background:url('../images/zk_line.png') no-repeat center bottom; }
+.cfeedback table .radios { width:120px; }
+.cfeedback table .radio { width:40px; vertical-align:top; text-align:center; }
+.cfeedback table tr.hover:hover td { background-color:#f5f5f5; }
+
+.cfeedback table tr.hover td { -webkit-transition:background .4s; -moz-transition:background .4s; -o-transition:background .4s; -ms-transition:background .4s; transition:background .4s; }
